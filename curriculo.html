@@ -11,18 +11,6 @@
         margin: 0px;
     }
 
-    .nome {
-        text-align: right;
-        background-color: darkblue;
-        color: rgb(255, 255, 255);
-        padding-top: 1px;
-        padding-bottom: 50px;
-        padding-right: 130px;
-        font-size: 30px;
-        margin: 0px;
-
-    }
-
     .imagem {
         width: 170px;
         margin: 0px;
@@ -31,96 +19,87 @@
         background-color: darkblue;
     }
 
-    table {
-        width: 80%;
-        border-collapse: collapse;
-    }
-
     .text {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
     }
 
     body {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
-</style>
-<style>
-    .text {
-        text-align: center;
-    }
 
-    .imagem {
-        width: 150px; /* Ajuste conforme necessário */
-        border-radius: 50%; /* Deixa a imagem redonda, se for quadrada */
-    }
-
-    .table-container {
+    .imagemDiv {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center; /* Centraliza a tabela verticalmente */
-        margin-top: 20px;
+        flex-direction: row;
     }
 
-    table {
-        border-collapse: collapse;
-        width: 80%; /* Ajuste conforme necessário */
+    .dadosPessoais {
+        margin-left: 30px;
     }
 
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
+    b {
+        font-size: large;
     }
 
-    th {
-        background-color: #f2f2f2;
-        text-align: left;
+    .escolaridade {
+        margin-left: 100px;
     }
 
-    .experience {
-        margin-top: 20px;
-    }
+    .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
 </style>
-<body>
-    <div class="text">
-        <img src="foto_curriculo.jpeg" alt="Descrição da imagem" class="imagem">
-        <h1 style="margin: 0px;">
-            Caua Amaral Costeski Crosati
-        </h1>
-    </div>
-    <div style="display: flex; justify-content: center; flex-direction: column;">
-        <table class="table-container">
-            <tbody>
-                <tr>
-                    <th style="text-align: left;">Dados Pessoais</th>
-                </tr>
-                <tr>
-                    <td>Telefone</td>
-                    <td>+55 43 996949515</td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td>Caua.crosati@edu.unifil.br</td>
-                </tr>
-                <tr>
-                    <td>Localização</td>
-                    <td>CEP: 86050464;
-                        Número: 300; Complemento: Ap 2201.</td>
-                </tr>
-                <br>
-            </tbody>
-        </table>
-        <b>Experiencia profissional</b>
-    <p>Trabalhei em uma empresa por 54 anos, trabalhei em outra por 123 anos.
-        tudo isso com apenas 12 anos de idade.
-    </p>
-    </div>
-</body>
 
-<footer></footer>
+<body>
+    <div class="container" style="display: flex; flex-direction: column; justify-content: center;">
+
+        <div class="imagemDiv">
+            <img src="foto_curriculo.jpeg" alt="Descrição da imagem" class="imagem">
+            <div class="text">
+                <h1 style="margin: 0px;">
+                    Caua Amaral Costeski Crosati
+                </h1>
+                <b style="margin-top: 10px; text-align: center;">Dados pessoais</b>
+                <p class="dadosPessoais">Telefone: +55 43 996949515</p>
+                <p class="dadosPessoais">E-mail: caua.crosati@edu.unifil.br</p>
+                <p class="dadosPessoais">Endereço: Cep-86050464; Número-300; Complemento: ap2201</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; flex-direction: column;">
+            <b style="margin-top: 30px; margin-left: 330px;">Escolaridade</b>
+            <p class="escolaridade">Ensino fundamental: Completo</p>
+            <p class="escolaridade">Ensino Superior: Completo</p>
+        </div>
+        <div style="display: flex; justify-content: center; flex-direction: column;">
+            <b style="margin-top: 30px; margin-left: 330px;">Experiência Profissional</b>
+            <p class="escolaridade">Empresas: OPCTEC</p>
+            <p class="escolaridade">Tempo de trabalho e cargo: 9 meses</p>
+            <p class="escolaridade">Principais funções: Atendimento ao cliente e programador junior</p>
+            <p class="escolaridade">realizações relevantes: criei algumas funções como a esolha de</p>
+            <p class="escolaridade">adição de campos para o cadastro de inscritos.</p>
+            <p class="escolaridade">uma aba para criar templates de emails.</p>
+        </div>
+        <div style="display: flex; justify-content: center; flex-direction: column;">
+            <b style="margin-top: 30px; margin-left: 330px;">Cursos e Certificações</b>
+            <p class="escolaridade">Cursos: Cursando ENG de Software, 3 bimestres.</p>
+            <p class="escolaridade">Certificações:</p>
+            <p class="escolaridade">Certificado pelo Goethe institut como nivel A1 em alemão</p>
+            <p class="escolaridade">Certificado de participação da OBR de 2017 ate 2019 e 1 vez terceiro lugar.</p>
+            <p class="escolaridade">Certificado de participação Hackathon SmartAgro 2024.</p>
+            <p class="escolaridade">Certificado de participação do Hackathon GreenTech 2024.</p>
+            <p class="escolaridade">Certificado de participação do HAckathon Ideathon-SESCAP-PR 2024.</p>
+            <p class="escolaridade">Certificado de participação do evento Level Up.</p>
+        </div>
+    </div>
+
+</body>
 
 </html>
